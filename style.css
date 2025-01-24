@@ -1,0 +1,213 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #83e1ad;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --font-padrao: Arial, verdana, helvetica, sans-serif;
+    --font-destaque: "Bebas Neue", sans-serif;
+    --font-android: 'android', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--font-padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    text-align: center;
+    padding-top: 30px;
+    min-height: 150px;
+}
+
+header h1 {
+    font-family: var(--font-destaque);
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.445);
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.445);
+    color: white;
+    max-width: 500px;
+    padding-left: 10px;
+    margin: auto;
+    padding-bottom: 30px;
+    padding-right: 10px;
+}
+
+nav {
+    background-color: var(--cor5);
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.384);
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    font-weight: bold;
+}
+
+main {
+    max-width: 1000px;
+    min-width: 300px;
+    background-color: white;
+    padding-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.521);
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.video {
+    background-color: var(--cor5);
+    padding-bottom: 30px;
+    padding-bottom: 59%;
+    position: relative;
+}
+
+div iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+/* main a::after {
+    content: '\1F517';
+
+    COMO COLOCA EMOJis EM CSS
+} */
+.externo:after {
+    content: '\1F517';
+}
+
+main img {
+    width: 100%;
+}
+
+/* transparent: Faça com que a cor mude ate ficar transparente  */
+main h2 {
+    font-family: var(--font-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 10px;
+}
+
+main h1 {
+    padding: 10px 0px 0px 10px;
+    color: var(--cor5);
+    font-family: var(--font-android);
+}
+
+aside {
+    background-color: var(--cor2);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.26);
+}
+
+aside ul {
+    columns: 2;
+    list-style-type: none;
+}
+
+/*  margin: -10px -10px 0px -10px; 
+10px cima, direita 10px, baixo 0xp e esquerda 10px */
+aside h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 8px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside li::before {
+    padding: 6px;
+    content: ' 🗸  ';
+}
+
+.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+footer {
+    background-color: var(--cor5);
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 1.1em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: var(--cor2);
+    text-decoration: underline;
+}
